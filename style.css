@@ -4,8 +4,10 @@
   --success: #4cc9f0;
   --warning: #f8961e;
   --danger: #f72585;
+
   --light-bg: #f8f9fa;
-  --light-text: #495057;
+  --light-text: #303133;
+  
   --dark-bg: #121212;
   --dark-card: #1e1e1e;
   --dark-text: #e9ecef;
@@ -66,7 +68,7 @@ header {
 /* Dashboard Styles */
 .dashboard {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   gap: 1.5rem;
   margin-bottom: 2.5rem;
 }
@@ -82,7 +84,7 @@ header {
 }
 
 body.dark .card {
-  background: var(--dark-card);
+  background: var(--dark-bg);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -95,7 +97,9 @@ body.dark .card {
   height: 100%;
 }
 
-.card:nth-child(1)::before { background: var(--success); }
+.card:nth-child(1)::before {
+     background: var(--success); 
+    }
 .card:nth-child(2)::before { background: var(--warning); }
 .card:nth-child(3)::before { background: var(--danger); }
 .card:nth-child(4)::before { background: var(--primary); }
